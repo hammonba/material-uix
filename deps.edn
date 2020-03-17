@@ -1,0 +1,18 @@
+{:deps {org.clojure/clojure {:mvn/version "1.10.1"}
+        org.clojure/tools.logging {:mvn/version "1.0.0"}
+        thheller/shadow-cljs {:mvn/version "2.8.92"}
+
+        clj-http {:mvn/version "3.10.0"}
+        enlive {:mvn/version "1.1.6"}
+        uix.core {:git/url "https://github.com/roman01la/uix.git"
+                  :deps/root "core"
+                  :sha "46011c8a2f1a05025971af8e26b8b6704520383c"}
+        uix.dom {:git/url "https://github.com/roman01la/uix.git"
+                 :deps/root "dom"
+                 :sha "46011c8a2f1a05025971af8e26b8b6704520383c"}
+        }
+
+ :paths ["src/main" "src/resources"]
+ :aliases {:dev {:main-opts ["-m" "shadow.cljs.devtools.cli"]}}
+ }
+
