@@ -11,7 +11,8 @@
         :asset-path "/js"
 
         :modules
-        {:main {:entries [uix.app]}}
+        {:main {:entries [uix.app]
+                :init-fn uix.app/main}}
 
         :compiler-options
         {:infer-externs :auto
